@@ -1,7 +1,7 @@
 # Pyber Ride Sharing
 
 
-##Observable Trends
+## Observable Trends
 - Pyber is primarily used in Urban City types when compared with Sub-Urban and Rural City Types. While the number of rides is high in urban City Types, the average price for a ride is more in the Rural City Types. With more data points such as duration of the ride or tariff,  we can further analyze on what is contributing for a higher average
 - Revenue contribution from suburban city types is almost 50% of the urban cities , but driver count is way less in suburban areas
 - Increasing the driver count in sub urban and Rural areas can contribute for improved usability which increases the Total revenue
