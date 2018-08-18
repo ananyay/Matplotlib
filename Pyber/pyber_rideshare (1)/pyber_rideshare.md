@@ -8,7 +8,7 @@
 
 ```python
 
-#Magic function to display the plots in line and stored in the notebook document
+# Magic function to display the plots in line and stored in the notebook document
 %matplotlib inline
 
 # Dependencies and Setup
@@ -35,19 +35,7 @@ pyber_df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
