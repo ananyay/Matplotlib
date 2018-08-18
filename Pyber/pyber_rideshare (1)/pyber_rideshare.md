@@ -1,13 +1,14 @@
+# Pyber Ride Sharing
 
-# Pyber Ridesharing Company
 
 ##Observable Trends
-- Pyber is primarily used in Urban City types when compared with Sub-Urban and Rural City Types. While the number of rides is high in urban City Types, the average price for a ride is more in the Rural City Types. With more data points such as duration of the ride or tariff,  we can further analyze on what is contributing for a higher average 
-- Revenue contribution from suburban city types is almost 50% of the urban cities , but driver count is way less in suburban areas 
-- Increasing the driver count in sub urban and Rural areas can contribute for improved usability which increases the Total revenue    
+- Pyber is primarily used in Urban City types when compared with Sub-Urban and Rural City Types. While the number of rides is high in urban City Types, the average price for a ride is more in the Rural City Types. With more data points such as duration of the ride or tariff,  we can further analyze on what is contributing for a higher average
+- Revenue contribution from suburban city types is almost 50% of the urban cities , but driver count is way less in suburban areas
+- Increasing the driver count in sub urban and Rural areas can contribute for improved usability which increases the Total revenue
 
+```python
 
-
+#Magic function to display the plots in line and stored in the notebook document
 %matplotlib inline
 
 # Dependencies and Setup
@@ -34,7 +35,19 @@ pyber_df.head()
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
