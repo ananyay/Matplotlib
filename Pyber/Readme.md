@@ -151,7 +151,7 @@ plt.savefig("Images/pyber.png")
 ```
 
 
-![png]("Images/pyber.png")
+![png](Images/pyber.png)
 
 
 
@@ -186,7 +186,7 @@ plt.savefig("Images/totalfares.png")
 ```
 
 
-![png]("Images/totalfares.png")
+![png](Images/totalfares.png)
 
 
 
@@ -217,7 +217,7 @@ plt.savefig("Images/totalrides.png")
 ```
 
 
-![png]("Images/totalrides.png")
+![png](Images/totalrides.png)
 
 
 
@@ -250,7 +250,7 @@ plt.savefig("Images/totaldrivers.png")
 ```
 
 
-![png]("Images/totaldrivers.png")
+![png](Images/totaldrivers.png)
 
 
 
