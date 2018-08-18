@@ -1,9 +1,13 @@
-Pyber Ride Sharing
-## Observable Trends
+# Pyber Ride Sharing
 
-Pyber is primarily used in Urban City types when compared with Sub-Urban and Rural City Types. While the number of rides is high in urban City Types, the average price for a ride is more in the Rural City Types. With more data points such as duration of the ride or tariff, we can further analyze on what is contributing for a higher average
-Revenue contribution from suburban city types is almost 50% of the urban cities , but driver count is way less in suburban areas
-Increasing the driver count in sub urban and Rural areas can contribute for improved usability which increases the Total revenue
+
+## Observable Trends
+- Pyber is primarily used in Urban City types when compared with Sub-Urban and Rural City Types. While the number of rides is high in urban City Types, the average price for a ride is more in the Rural City Types. With more data points such as duration of the ride or tariff,  we can further analyze on what is contributing for a higher average
+- Revenue contribution from suburban city types is almost 50% of the urban cities , but driver count is way less in suburban areas
+- Increasing the driver count in sub urban and Rural areas can contribute for improved usability which increases the Total revenue
+
+```python
+
 # Magic function to display the plots in line and stored in the notebook document
 %matplotlib inline
 
@@ -25,22 +29,81 @@ pyber_df = pd.merge(ride_data,city_data,on = "city",how = "left")
 
 # Display the data table for preview
 pyber_df.head()
-<style scoped> .dataframe tbody tr th:only-of-type { vertical-align: middle; }
-.dataframe tbody tr th {
-    vertical-align: top;
-}
+```
 
-.dataframe thead th {
-    text-align: right;
-}
-</style>
-city	date	fare	ride_id	driver_count	type
-0	Lake Jonathanshire	2018-01-14 10:14:22	13.83	5739410935873	5	Urban
-1	South Michelleport	2018-03-04 18:24:09	30.24	2343912425577	72	Urban
-2	Port Samanthamouth	2018-02-24 04:29:00	33.44	2005065760003	57	Urban
-3	Rodneyfort	2018-02-10 23:22:03	23.44	5149245426178	34	Urban
-4	South Jack	2018-03-06 04:28:35	34.58	3908451377344	46	Urban
-Bubble Plot of Ride Sharing Data
+
+
+
+<div>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>city</th>
+      <th>date</th>
+      <th>fare</th>
+      <th>ride_id</th>
+      <th>driver_count</th>
+      <th>type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Lake Jonathanshire</td>
+      <td>2018-01-14 10:14:22</td>
+      <td>13.83</td>
+      <td>5739410935873</td>
+      <td>5</td>
+      <td>Urban</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>South Michelleport</td>
+      <td>2018-03-04 18:24:09</td>
+      <td>30.24</td>
+      <td>2343912425577</td>
+      <td>72</td>
+      <td>Urban</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Port Samanthamouth</td>
+      <td>2018-02-24 04:29:00</td>
+      <td>33.44</td>
+      <td>2005065760003</td>
+      <td>57</td>
+      <td>Urban</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Rodneyfort</td>
+      <td>2018-02-10 23:22:03</td>
+      <td>23.44</td>
+      <td>5149245426178</td>
+      <td>34</td>
+      <td>Urban</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>South Jack</td>
+      <td>2018-03-06 04:28:35</td>
+      <td>34.58</td>
+      <td>3908451377344</td>
+      <td>46</td>
+      <td>Urban</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+## Bubble Plot of Ride Sharing Data
+
+
+```python
 # Obtain the x and y coordinates for each of the three city types
 
 # Do a groupby on city and calculate total rides, avergae fare and driver count 
@@ -84,11 +147,23 @@ plt.text(42,35,"Note: \nCircle size correlates with driver count per city")
 
 # Save Figure
 plt.savefig("Images/pyber.png")
-png
 
+```
+
+
+![png](output_2_0.png)
+
+
+
+```python
 # Show plot
 plt.show()
-Total Fares by City Type
+```
+
+## Total Fares by City Type
+
+
+```python
 # Calculate Type Percents
 # Do a groupby on count and claculate the total fares by city type using .sum()
 fare_data = pyber_df.groupby("type")
@@ -108,11 +183,22 @@ plt.title("% of Total fares by City Type")
 
 # Save Figure
 plt.savefig("Images/totalfares.png")
-png
+```
 
+
+![png](output_5_0.png)
+
+
+
+```python
 # Show Figure
 plt.show()
-Total Rides by City Type
+```
+
+## Total Rides by City Type
+
+
+```python
 # Calculate Ride Percents
 # Do a groupby on type and calculate total rides using .count()
 ride_data = pyber_df.groupby("type")
@@ -128,11 +214,22 @@ plt.title("% of Total rides by City Type")
 
 # Save Figure
 plt.savefig("Images/totalrides.png")
-png
+```
 
+
+![png](output_8_0.png)
+
+
+
+```python
 # Show Figure
 plt.show()
-Total Drivers by City Type
+```
+
+## Total Drivers by City Type
+
+
+```python
 # Calculate Driver Percents
 # do a groupby on city_data dataframe  to avoid duplicate driver count and calculate total drivers count 
 driver_data = city_data.groupby("type")
@@ -150,7 +247,14 @@ plt.title("% of Total drivers by City Type")
 
 # Save Figure
 plt.savefig("Images/totaldrivers.png")
-png
+```
 
+
+![png](output_11_0.png)
+
+
+
+```python
 # Show Figure
 plt.show()
+```
