@@ -146,12 +146,12 @@ plt.grid()
 plt.text(42,35,"Note: \nCircle size correlates with driver count per city")
 
 # Save Figure
-plt.savefig("Images/pyber.png")
+plt.savefig("Pyber/Images/pyber.png")
 
 ```
 
 
-![png](Images/pyber.png)
+![png](Pyber/Images/pyber.png)
 
 
 
@@ -182,11 +182,11 @@ plt.pie(total_fares, explode=explode, labels=labels, colors=colors,
 plt.title("% of Total fares by City Type")
 
 # Save Figure
-plt.savefig("Images/totalfares.png")
+plt.savefig("Pyber/Images/totalfares.png")
 ```
 
 
-![png](Images/totalfares.png)
+![png](Pyber/Images/totalfares.png)
 
 
 
@@ -213,11 +213,11 @@ plt.pie(total_rides, explode=explode, labels=labels, colors=colors,
 plt.title("% of Total rides by City Type")
 
 # Save Figure
-plt.savefig("Images/totalrides.png")
+plt.savefig("Pyber/Images/totalrides.png")
 ```
 
 
-![png](Images/totalrides.png)
+![png](Pyber/Images/totalrides.png)
 
 
 
@@ -246,11 +246,11 @@ plt.title("% of Total drivers by City Type")
 
 
 # Save Figure
-plt.savefig("Images/totaldrivers.png")
+plt.savefig("Pyber/Images/totaldrivers.png")
 ```
 
 
-![png](Images/totaldrivers.png)
+![png](Pyber/Images/totaldrivers.png)
 
 
 
